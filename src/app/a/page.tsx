@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { User } from "../User";
+import { ClientRenderBootstrapDataExample } from "../BootstrapDataClient";
 
 export default function PageA() {
   return (
     <div>
       <div>Page A</div>
-      <User />
+      <ClientRenderBootstrapDataExample />
       <div>
         <Link href="/">home</Link>
       </div>

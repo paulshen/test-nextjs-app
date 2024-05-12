@@ -1,5 +1,6 @@
 import { headers } from "next/headers";
 import Link from "next/link";
+import { ClientRenderBootstrapDataExample } from "../BootstrapDataClient";
 
 export default async function PageC() {
   const h = headers();
@@ -8,6 +9,7 @@ export default async function PageC() {
   return (
     <div>
       <div>Page C: {value}</div>
+      <ClientRenderBootstrapDataExample />
       <div>
         <Link href="/">home</Link>
       </div>
