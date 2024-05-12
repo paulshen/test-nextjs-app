@@ -1,14 +1,13 @@
 "use client";
-import { BootstrapData } from "./BootstrapData";
 
 // pretend this is some global state (eg zustand)
-let bootstrapData: BootstrapData | undefined;
+let bootstrapData: any | undefined;
 
 export function BootstrapDataClient({
   data,
   children,
 }: {
-  data: BootstrapData;
+  data: any;
   children: React.ReactNode;
 }) {
   if (bootstrapData === undefined) {
